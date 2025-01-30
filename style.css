@@ -1,0 +1,92 @@
+:root{
+    font-family: berryrotunda;
+    font-size: 24px;
+    color: wheat;
+}
+
+h1{
+    font-family: kelmscott;
+    font-size: 56px;
+    color: rgb(208, 214, 181);
+}
+
+@font-face {
+    font-family: berryrotunda;
+    src: url(fonts/Berry\ Rotunda.ttf);
+}
+
+@font-face {
+    font-family: kelmscott;
+    src: url(fonts/KELMSCOT.TTF);
+}
+
+
+body.home-screen{
+    background-image: url(https://visionsoiaf.wordpress.com/wp-content/uploads/2011/08/corominas-a-clash-of-kings.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center horizontally */
+}
+
+body.quiz-screen{
+    background-image: url(https://visionsoiaf.wordpress.com/wp-content/uploads/2011/08/corominas-a-game-of-thrones.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+body.completed-screen{
+    background-image: url(https://visionsoiaf.wordpress.com/wp-content/uploads/2011/08/corominas-a-storm-of-swords.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#quiz-container {
+    background-color: rgb(117, 185, 190);
+    opacity: 0.9;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 300px;
+}
+
+button {
+    background-color: #E8CEE4; /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 15px 32px; /* Some padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make the buttons appear side by side */
+    font-family: berryrotunda;
+    font-size: 16px; /* Increase font size */
+    margin: 4px 2px; /* Some margin */
+    cursor: pointer; /* Pointer/hand icon */
+    border-radius: 8px; /* Rounded corners */
+}
+
+button:hover {
+    background-color: #D8ACD1; /* Darker green on hover */
+}
+
+button:disabled {
+    background-color: #cccccc; /* Gray background when disabled */
+    cursor: not-allowed; /* Not-allowed cursor when disabled */
+}
